@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".USBModeSwitchActivity">
+
+    <TextView
+        android:id="@+id/textViewCurUSBMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textview_cur_usb_mode"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewHint"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeviceMode" />
+
+    <Button
+        android:id="@+id/buttonHostMode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="switchUSBMode"
+        android:text="@string/host"
+        android:textColor="#F44336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCurMode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEE58"
+        android:onClick="switchUSBMode"
+        android:text="@string/cur_mode"
+        android:textColor="#212121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDeviceMode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="switchUSBMode"
+        android:text="@string/device"
+        android:textColor="#F44336"
+        app:layout_constraintStart_toEndOf="@+id/buttonHostMode"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textview_hint1"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHostMode" />
+</androidx.constraintlayout.widget.ConstraintLayout>

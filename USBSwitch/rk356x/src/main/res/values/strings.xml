@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">USB H/D 切换 </string>
+    <string name="host">切成HOST模式</string>
+    <string name="device">切成Device模式</string>
+    <string name="textview_hint1">当前 USB 模式:</string>
+    <string name="textview_cur_usb_mode">unknow</string>
+    <string name="cur_mode">获取当前模式</string>
+</resources>
